@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@200&family=Source+Serif+Pro:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #323232;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header p {
+    font-weight: 900;
+    font-size: xx-large;
+    color: #fff;
+    letter-spacing: 7px;
+}
+
+header img {
+    display: none;
+}
+
+header.sticky {
+    padding: 2px 10px;
+    background: rgb(194, 194, 194);
+}
+
+header.sticky p {
+    position: fixed;
+    display: none;
+}
+
+header.sticky img {
+    display: block;
+    margin-left: 3%;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    display: block;
+    position: relative;
+    margin: 0 15px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+header ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+header ul .nav-menu ul li a {
+    color: rgb(246, 167, 180);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li:hover>ul {
+    display: block;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background: url("https://i.ibb.co/4PYF3cZ/aboutus.png");
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: rgb(19, 8, 8);
+}
+
+header.sticky ul li:hover>ul {
+    background: rgb(194, 194, 194);
+}
+
+#logOut:hover {
+    color: red;
+    font-weight: 1000;
+    font-size: larger;
+}
+
+#donate:hover {
+    font-size: larger;
+    font-weight: bold;
+}
+
+header ul .nav-menu li ul li a {
+    color: rgb(191, 206, 56);
+    font-weight: 700;
+}
+
+header.sticky ul .nav-menu li ul li a {
+    color: rgb(1, 1, 1);
+    font-weight: 300;
+}
+
+header ul .nav-menu ul li a {
+    color: black;
+}
+
+header ul .nav-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#home:hover {
+    font-size: larger;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+form.example input[type=text] {
+    display: flex;
+    border-radius: 10px;
+    float: left;
+    width: 80%;
+    padding: 5px;
+    background: white;
+    border: none;
+}
+
+form.example button {
+    background: #ffffff00;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+form.example button:hover {
+    background: #000000;
+    color: white;
+    transform: translateX(-8px);
+    transition: all 0.5s ease;
+}
+
+form.example input[type=text]::placeholder {
+    color: transparent;
+}
+
+form.example input[type=text]:hover::placeholder {
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.sticky form.example input[type=text] {
+    background: #777676;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sticky form.example input[type=text]:hover::placeholder {
+    color: white;
+    font-weight: bold;
+    transition: all 0.3 ease;
+}
+
+.sticky form.example button {
+    color: #000000;
+}
+
+.sticky form.example button:hover {
+    background: transparent;
+}
+
+.ham {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media screen and (max-width: 1340px) {
+    .ham {
+        display: block;
+    }
+    .ham.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .ham.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .ham.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #0a090954;
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+    header ul .nav-menu.active li ul {
+        margin-left: 42%;
+        margin-top: -2.5%;
+        z-index: 1;
+        background-color: #ffffffbb;
+    }
+    header ul .nav-menu.active li ul li a {
+        color: #000000;
+    }
+    header.sticky ul .nav-menu.active {
+        top: 54px;
+        background-color: #fafafac3;
+    }
+    header.sticky ul .nav-menu.active li ul {
+        margin-left: 42%;
+        margin-top: -2.5%;
+        z-index: 1;
+        background-color: #1c1c1cbb;
+    }
+    header.sticky ul .nav-menu.active li ul li a {
+        color: #fcfcfc;
+        font-weight: 900;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    header.sticky .nav-menu ul li {
+        color: rgb(246, 15, 15);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 40vh;
+    }
+}

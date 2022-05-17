@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Log-In</title>
+
+    <link rel="shortcut icon" href="pic/logoWeb.ico" />
+
+    <!--CSS BUNDLE-->
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/btn.css">
+
+    <!--JS BUNDLE-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h2 id="headTitle">GIPENG<br></h2>
+            <h2 id="botTitle">Login Page</h2>
+        </div>
+    </div>
+    <div id="main">
+        <form>
+            <h1 style="margin-left: 6%; font-size:20px;">Login Account</h1>
+            <hr width="100%" style="margin-left: 6%; margin-bottom: 20px;">
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Username :</label><br>
+                <input type="text" id="myId" placeholder="Username" class="uName" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Password :</label> <br>
+                <input type="password" id="myInput" placeholder="Password" required>
+                <button type="button" onclick="visibilePassword();" id="eyes"></button>
+                <button type="button" class="clear-btn" onclick="clearInput();">Clear</button>
+            </div>
+
+            <div class="btn-grp">
+                <button type="submit" id="login-btn">Login</button> or
+                <button type="button" onclick="window.location='register.html';" id="register-btn">Register</button>
+            </div>
+    </div>
+</body>
+
+</html>

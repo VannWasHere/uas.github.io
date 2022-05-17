@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="pic/logoWeb.ico" />
+
+    <!--CSS BUNDLE-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/paper-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!--JS BUNDLE-->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>GIPENG</p>
+        <img src="pic/gipeng.png" alt="logo" width="50px">
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search" autocomplete="off">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul>
+            <div class="nav-menu">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="about-us.html" id="home">About Us</a></li>
+                <li><a href="#" id="donate">Donate</a>
+                    <ul>
+                        <li><a href="#">Streamer</a></li>
+                        <li><a href="#">Writer</a></li>
+                        <li><a href="#">Artist</a></li>
+                    </ul>
+                </li>
+                <li><a href="signin.html" id="logOut">Log-Out</a></li>
+
+            </div>
+            <div class="ham">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <div class="paperContent3">
+        <div class="marsella-personal">
+            <img src="pic/creatorSella.png" alt="" srcset="">
+            <h3>Sella</h3>
+            <hr>
+            <div class="content-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus, necessitatibus dicta accusamus quisquam repellendus nobis error fugiat aspernatur inventore! Ab quo cumque amet repudiandae suscipit eaque repellat praesentium id?
+            </div>
+        </div>
+        <div class="atin-personal">
+            <img src="pic/creatorAtin.png" alt="" srcset="">
+            <h3>Atin</h3>
+            <hr>
+            <div class="content-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad, amet nulla corporis facilis accusamus porro tenetur laborum provident labore quasi, aperiam quod ut doloribus ipsam inventore enim id ratione!
+            </div>
+        </div>
+        <div class="jenet-personal">
+            <img src="pic/creatorJenet.png" alt="" srcset="">
+            <h3>Jeanet</h3>
+            <hr>
+            <div class="content-about">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium repellendus possimus suscipit odit voluptatum enim culpa ad dicta nihil minima architecto, numquam provident, ex hic totam dignissimos asperiores omnis.
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+            <div class="i-ig">
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink1();" id="igSella"></i>
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink2();" id="igAtin"></i>
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink3();" id="igJeanet"></i>
+            </div>
+            <div class="a-ig">
+                <a href="https://www.instagram.com/marsellacia/">Sella</a>
+                <a href="https://www.instagram.com/atine7/"></i>Atin</a>
+                <a href="https://www.instagram.com/jeanetkastilong" style="font-size: 10px;"></i>Jeanet</a>
+            </div>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a> -
+                <a class="link-1" href="#">About Us</a> -
+                <a class="link-1" href="#">Home</a> -
+                <a class="link-1" href="#">Home</a>
+            </p>
+            <p>GIPENG &copy; 2022</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <!--Script-->
+
+    <script>
+        const ham = document.querySelector(".ham");
+        const navLi = document.querySelector(".nav-menu");
+
+        ham.addEventListener("click", () => {
+            ham.classList.toggle("active");
+            navLi.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".line").forEach(n => n.addEventListener("click", () => {
+            ham.classList.remove("active");
+            navLi.classList.remove("active");
+        }))
+    </script>
+</body>
+
+</html>

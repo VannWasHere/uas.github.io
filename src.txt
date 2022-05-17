@@ -1,0 +1,53 @@
+ <!--Main Card-->
+    <section>
+        <div class="swiper mySwiper container" id="Streamer">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <!--<img src="images/img1.jpg" alt="">-->
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">Someone Name</span>
+                            <span class="profession">Web Developer</span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+                            <button class="hireMe">Hire Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+    <div class="form-group">
+    <label style="letter-spacing: 2px;">Register As :</label><br>
+    <select class="userInput" name="registerOption">
+        <option value="user">As User</option>
+        <option value="content-creator">Content Creator</option>
+    </select>
+</div>
+
+    background: url("https://i.ibb.co/4PYF3cZ/aboutus.png");

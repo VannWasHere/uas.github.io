@@ -1,0 +1,52 @@
+#login-btn {
+    cursor: pointer;
+    width: 30%;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+#register-btn {
+    cursor: pointer;
+    width: 40%;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.clear-btn {
+    cursor: pointer;
+    display: flex;
+    position: sticky;
+    font-weight: bold;
+    padding-left: 8%;
+    width: 40%;
+    margin-left: 323%;
+    margin-top: -13.8%;
+    border-radius: 10px;
+}
+
+.clear-btn:hover {
+    background-color: rgb(212, 209, 209);
+}
+
+#subButton {
+    cursor: pointer;
+    padding: 1%;
+    margin-top: 3%;
+    width: 50%;
+    margin-bottom: 20%;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-left: 76%;
+}
+
+#subButton:hover {
+    transition: all 0.5s ease;
+    border: 1px solid white;
+    transform: translateY(-3px) translateX(-2px);
+}

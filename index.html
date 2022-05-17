@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="pic/logoWeb.ico" />
+
+    <!--CSS BUNDLE-->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/paper-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!--JS BUNDLE-->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <p>GIPENG</p>
+        <img src="pic/gipeng.png" alt="logo" width="50px">
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search" autocomplete="off">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul>
+            <div class="nav-menu">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="about-us.html" id="home">About Us</a></li>
+                <li><a href="#" id="donate">Donate</a>
+                    <ul>
+                        <li><a href="#">Streamer</a></li>
+                        <li><a href="#">Writer</a></li>
+                        <li><a href="#">Artist</a></li>
+                    </ul>
+                </li>
+                <li><a href="signin.html" id="logOut">Log-Out</a></li>
+
+            </div>
+            <div class="ham">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </ul>
+    </header>
+    <section class="banner"></section>
+
+    <div class="paperContent1">
+        <h1>Halo,</h1>
+        <h3 style="padding-bottom: 0.5%">Atin apa kabar? Welcome to GIPENG!</h3>
+        <hr>
+
+        <article style="padding-top: 1%; color:rgb(213, 213, 213) ;">
+            <h2 style="letter-spacing: 3px">GIPENG</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, explicabo facilis sapiente eum fugiat odit cupiditate iste quae illum atque obcaecati quam nulla possimus eligendi debitis quia. Magnam in obcaecati amet blanditiis ducimus odit
+                corporis sunt, animi tempora numquam ut labore at quos dolorum distinctio, quaerat voluptatum rem porro vitae id hic alias! Dolore molestias aperiam odit veritatis temporibus consectetur et consequatur laboriosam. Molestias, vitae delectus
+                laudantium obcaecati similique ea doloremque odit enim doloribus et dolores mollitia! Rerum, omnis repellat.</p>
+        </article>
+    </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+            <div class="i-ig">
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink1();" id="igSella"></i>
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink2();" id="igAtin"></i>
+                <i class="fa fa-instagram" style="color: white;" onclick="clickLink3();" id="igJeanet"></i>
+            </div>
+            <div class="a-ig">
+                <a href="https://www.instagram.com/marsellacia/">Sella</a>
+                <a href="https://www.instagram.com/atine7/"></i>Atin</a>
+                <a href="https://www.instagram.com/jeanetkastilong" style="font-size: 10px;"></i>Jeanet</a>
+            </div>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a> -
+                <a class="link-1" href="#">Home</a> -
+                <a class="link-1" href="#">Home</a> -
+                <a class="link-1" href="#">Home</a>
+            </p>
+            <p>GIPENG &copy; 2022</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+    <!--Script on HTML-->
+    <script>
+        const ham = document.querySelector(".ham");
+        const navLi = document.querySelector(".nav-menu");
+
+        ham.addEventListener("click", () => {
+            ham.classList.toggle("active");
+            navLi.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".line").forEach(n => n.addEventListener("click", () => {
+            ham.classList.remove("active");
+            navLi.classList.remove("active");
+        }))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@200&family=Source+Serif+Pro:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidenav {
+    height: 99%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#main {
+    height: 100%;
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    #main {
+        margin-left: 40%;
+        padding-left: 1%;
+    }
+    .sidenav {
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 768) {
+    form {
+        padding-left: 12%;
+    }
+}
+
+.login-main-text {
+    margin-top: 20%;
+    padding: 60px;
+    font-size: larger;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#headTitle {
+    font-size: 60px;
+    letter-spacing: 12px;
+    font-weight: 900;
+    text-shadow: -6px 5px 7px #CECECE;
+}
+
+#botTitle {
+    font-weight: bolder;
+}
+
+.login-main-text h2 {
+    font-weight: 300;
+}
+
+input {
+    display: flex;
+    height: 27px;
+    border-radius: 4px;
+    background-color: #CECECE;
+}
+
+#myId::placeholder,
+#myInput::placeholder {
+    padding-left: 0.5%;
+    letter-spacing: 1px;
+}
+
+.userInput {
+    width: 60%;
+    color: #000;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+form {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.form-group {
+    font-weight: bolder;
+}
+
+form>.form-group {
+    padding: 1%;
+}
+
+div form .form-group:nth-child(9) {
+    padding-bottom: 0%;
+}
+
+.backward {
+    color: white;
+}
+
+#file-upload {
+    width: 57.8%;
+    padding: 2%;
+}
+
+div form h1,
+div form h2,
+div form hr {
+    padding-left: 1%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Icon-->
+    <link rel="shortcut icon" href="pic/logoWeb.ico" />
+
+    <!--Stylesheet Bundle-->
+    <link rel="stylesheet" href="css/reg.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/46dc39d711.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h2 id="headTitle">GIPENG<br></h2>
+            <h2 id="botTitle">Register Page</h2>
+        </div>
+    </div>
+    <div id="main" width="100%" height="100%">
+        <a href="signin.html" class="backward"><i class="fa-solid fa-arrow-left" ></i></a>
+        <form>
+            <h1 style="margin-left: 6%; font-size:20px;">Register Account</h1>
+            <p style="margin-left: 6%;">Or Register as <a href="register_cc.html" id="a-link">Content Creator</a></p>
+            <hr width="100%" style="margin-left: 6%; margin-bottom: 20px;">
+
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Name :</label><br>
+                <input type="text" placeholder="Name" class="userInput" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Username :</label> <br>
+                <input type="text" placeholder="Username" class="userInput" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Email :</label><br>
+                <input type="text" placeholder="Email" class="userInput" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Password :</label><br>
+                <input type="password" onkeyup='check();' id="password1" class="userInput" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label style="letter-spacing: 2px;">Confirm Password :</label> <br>
+                <input type="password" onkeyup='check();' id="password2" class="userInput" placeholder="Confirm Password" required>
+                <span id='message' style="font-weight: bolder;"></span>
+            </div>
+            <button type="submit" id="subButton">Submit Form</button>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
